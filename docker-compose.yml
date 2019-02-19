@@ -1,14 +1,13 @@
-
 version: '2'
 
 services:
   keycloak:
-    image: jboss/keycloak
+    build: ./keycloak
     environment:
-      KEYCLOAK_USER: admin
-      KEYCLOAK_PASSWORD: Pa55w0rd
+      KEYCLOAK_USER: administrator
+      KEYCLOAK_PASSWORD: administrator
     ports:
-      - "8080:8080"
+      - "9090:8080"
     networks:
       - backend
 
