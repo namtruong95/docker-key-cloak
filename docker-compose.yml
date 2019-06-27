@@ -1,4 +1,4 @@
-version: '2'
+version: "3"
 
 services:
   keycloak:
@@ -7,10 +7,4 @@ services:
       KEYCLOAK_USER: administrator
       KEYCLOAK_PASSWORD: administrator
     ports:
-      - "9090:8080"
-    networks:
-      - backend
-
-networks:
-  backend:
-    driver: "bridge"
+      - "8080:8080"
